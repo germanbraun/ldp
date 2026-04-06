@@ -1,0 +1,6 @@
+responseformat = application/sparql-results+json
+iri = http://localhost:10214/container/queryTemplateContainer/test
+disabled = false
+aclPermission = qaas:execute:*
+repository = default
+publisher = http://www.metaphacts.com/resource/user/admin
