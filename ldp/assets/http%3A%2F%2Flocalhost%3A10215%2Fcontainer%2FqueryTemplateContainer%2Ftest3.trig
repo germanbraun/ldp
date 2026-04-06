@@ -1,0 +1,13 @@
+
+<http://localhost:10215/container/queryTemplateContainer/test3/context> {
+  <http://localhost:10215/container/queryTemplateContainer/test3> a <http://spinrdf.org/spin#Template>,
+      <http://spinrdf.org/spin#SelectTemplate>, <http://www.w3.org/ns/prov#Entity>, <http://www.w3.org/ns/ldp#Resource>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "test3";
+    <http://www.w3.org/2000/01/rdf-schema#comment> "test3";
+    <http://spinrdf.org/spin#body> <http://localhost:10215/container/queryContainer/test3>;
+    <http://www.w3.org/ns/prov#wasAttributedTo> <http://www.metaphacts.com/resource/user/admin>;
+    <http://www.w3.org/ns/prov#generatedAtTime> "2026-04-06T14:50:10.646Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+  
+  <http://www.metaphacts.com/ontologies/platform#queryTemplateContainer> <http://www.w3.org/ns/ldp#contains>
+      <http://localhost:10215/container/queryTemplateContainer/test3> .
+}
