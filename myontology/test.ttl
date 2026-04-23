@@ -1,0 +1,117 @@
+@prefix : <http://ontologies.metaphacts.com/test-conversion/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix vaem: <http://www.linkedmodel.org/1.2/schema/vaem#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:0.1 a owl:Ontology;
+  <http://open-services.net/ns/core#modifiedBy> "admin";
+  dct:contributor "admin";
+  dct:created "2026-04-23T11:29:24.786Z"^^xsd:dateTime;
+  dct:creator "admin";
+  dct:modified "2026-04-23T12:19:56.887Z"^^xsd:dateTime;
+  dct:title "Test Conversion"@en;
+  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
+  vaem:namespace "http://ontologies.metaphacts.com/test-conversion/"^^xsd:anyURI;
+  rdfs:label "Test Conversion"@en;
+  owl:versionInfo "0.1" .
+
+:Class1 a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "admin";
+  dct:contributor "admin";
+  dct:created "2026-04-23T11:30:19.384Z"^^xsd:dateTime;
+  dct:creator "admin";
+  dct:modified "2026-04-23T11:30:19.384Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.1;
+  rdfs:label "Class 1"@en .
+
+:Class1Shape a sh:NodeShape;
+  sh:property [
+      sh:or ([
+            sh:class :Class3
+          ] [
+            sh:class :Class2
+          ]);
+      sh:path :relationOr
+    ];
+  sh:targetClass :Class1 .
+
+:Class2 a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "admin";
+  dct:contributor "admin";
+  dct:created "2026-04-23T11:30:00.909Z"^^xsd:dateTime;
+  dct:creator "admin";
+  dct:modified "2026-04-23T11:30:00.909Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.1;
+  rdfs:label "Class 2"@en .
+
+:Class3 a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "admin";
+  dct:contributor "admin";
+  dct:created "2026-04-23T11:30:05.013Z"^^xsd:dateTime;
+  dct:creator "admin";
+  dct:modified "2026-04-23T11:30:05.013Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.1;
+  rdfs:label "Class 3"@en .
+
+:Class4 a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "admin";
+  dct:contributor "admin";
+  dct:created "2026-04-23T11:30:34.362Z"^^xsd:dateTime;
+  dct:creator "admin";
+  dct:modified "2026-04-23T11:30:57.861Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.1;
+  rdfs:label "Class 4"@en .
+
+:Class4Shape a sh:NodeShape;
+  sh:property [
+      sh:class :Class5;
+      sh:path :relationOr
+    ];
+  sh:targetClass :Class4 .
+
+:Class5 a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "admin";
+  dct:contributor "admin";
+  dct:created "2026-04-23T11:30:41.368Z"^^xsd:dateTime;
+  dct:creator "admin";
+  dct:modified "2026-04-23T11:30:41.368Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.1;
+  rdfs:label "Class 5"@en .
+
+:Class6 a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "admin";
+  dct:contributor "admin";
+  dct:created "2026-04-23T12:19:55.650Z"^^xsd:dateTime;
+  dct:creator "admin";
+  dct:modified "2026-04-23T12:19:55.650Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.1;
+  rdfs:label "Class 6"@en .
+
+:Class6Shape a sh:NodeShape;
+  sh:property [
+      sh:class :Class7;
+      sh:path :relationOr
+    ];
+  sh:targetClass :Class6 .
+
+:Class7 a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "admin";
+  dct:contributor "admin";
+  dct:created "2026-04-23T12:19:10.447Z"^^xsd:dateTime;
+  dct:creator "admin";
+  dct:modified "2026-04-23T12:19:10.447Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.1;
+  rdfs:label "Class 7"@en .
+
+:relationOr a owl:ObjectProperty;
+  <http://open-services.net/ns/core#modifiedBy> "admin";
+  dct:contributor "admin";
+  dct:created "2026-04-23T11:30:17.565Z"^^xsd:dateTime;
+  dct:creator "admin";
+  dct:modified "2026-04-23T11:30:17.565Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.1;
+  rdfs:label "relationOR"@en .
