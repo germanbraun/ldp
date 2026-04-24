@@ -1,0 +1,10 @@
+@prefix : <https://myAssetType.metaphacts.com/asset/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix test: <http://test.metaphacts.com/resource/> .
+@prefix vaem: <http://www.linkedmodel.org/1.2/schema/vaem#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.example.com/id/person3> test:fullName "Test", "hola", "testing custom from test user" .
+
+<https://myAssetType.metaphacts.com/asset/0.1> a <https://example.com/MyAssetType> .
