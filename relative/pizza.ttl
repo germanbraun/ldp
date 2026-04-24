@@ -1,0 +1,125 @@
+@prefix : <http://example.org/pizza2#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix vaem: <http://www.linkedmodel.org/1.2/schema/vaem#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/pizza2#> a owl:Ontology;
+  rdfs:comment "Ein komplexer Härtetest für den Graffl-Parser mit OWL DL.";
+  rdfs:label "Die Erweiterte Pizza-Ontologie" .
+
+:CheeseTopping a owl:Class;
+  rdfs:label "CheeseTopping";
+  rdfs:subClassOf :PizzaTopping .
+
+:Eigenschaften a <https://www.hedenus.de/graffl/Group>;
+  rdfs:label "Eigenschaften";
+  <https://www.hedenus.de/graffl/contains> :hasTopping .
+
+:Grundzutaten a <https://www.hedenus.de/graffl/Group>;
+  rdfs:label "Grundzutaten";
+  <https://www.hedenus.de/graffl/contains> :CheeseTopping, :Ham, :Jalapeno, :MeatTopping,
+    :Mozzarella, :PizzaTopping, :Salami .
+
+:Ham a owl:Class;
+  rdfs:label "Schinken"@de, "Ham";
+  rdfs:subClassOf :MeatTopping .
+
+:Jalapeno a owl:Class;
+  rdfs:label "Jalapeno";
+  rdfs:subClassOf :PizzaTopping .
+
+:Komplexe%20Pizzen a <https://www.hedenus.de/graffl/Group>;
+  rdfs:label "Komplexe Pizzen";
+  <https://www.hedenus.de/graffl/contains> _:genid-01ec67e0f9f8408a985eb23028324d983074-1D061570D481D8822FDFF7689C69AF44,
+    _:genid-01ec67e0f9f8408a985eb23028324d983074-20553E2A00430C2EECCF23B27610D142, _:genid-01ec67e0f9f8408a985eb23028324d983074-2AE686FB65DFB81C946FC9551FB2FFBD,
+    _:genid-01ec67e0f9f8408a985eb23028324d983074-42EA83EF3888EED755D0887EA20D89C5, _:genid-01ec67e0f9f8408a985eb23028324d983074-484451A4617FF8F5A57E763EFF5E3A71,
+    _:genid-01ec67e0f9f8408a985eb23028324d983074-4D7D33B8B1C97D1E92B06F277BA1C7A5, _:genid-01ec67e0f9f8408a985eb23028324d983074-733DC91CC7C595FCE3D70D13B7FA1BEB,
+    _:genid-01ec67e0f9f8408a985eb23028324d983074-78C3BF5B83F70F2A5445BE44B72B89F4, _:genid-01ec67e0f9f8408a985eb23028324d983074-7F6192F148FDEDB777DAA2B37D83DDD3,
+    _:genid-01ec67e0f9f8408a985eb23028324d983074-87A9546F2A6BB9E687FA8DE94940588C, _:genid-01ec67e0f9f8408a985eb23028324d983074-8EBF2434B92E13E7517A99264B64FB61,
+    _:genid-01ec67e0f9f8408a985eb23028324d983074-93F8759452139FF3DE311A27AB3BA862, _:genid-01ec67e0f9f8408a985eb23028324d983074-A4851839B33228DBC3B18B129E1599A2,
+    _:genid-01ec67e0f9f8408a985eb23028324d983074-A8FBEC1CEC50D3E5EAD810604B49783D, _:genid-01ec67e0f9f8408a985eb23028324d983074-B1BB31EBDE704ED2B32E0FE4AFCD06DB,
+    _:genid-01ec67e0f9f8408a985eb23028324d983074-C493E672F2C40147C885CEF35FA5D56E, _:genid-01ec67e0f9f8408a985eb23028324d983074-EA0853A7F51829FE189EAD258C94FBE6,
+    :MeatLoversPizza, :Pizza, :SalamiPizza, :SpicyPizza .
+
+:MeatLoversPizza a owl:Class;
+  rdfs:label "MeatLoversPizza";
+  rdfs:subClassOf _:genid-01ec67e0f9f8408a985eb23028324d983074-1D061570D481D8822FDFF7689C69AF44 .
+
+_:genid-01ec67e0f9f8408a985eb23028324d983074-1D061570D481D8822FDFF7689C69AF44 a owl:Class;
+  owl:intersectionOf _:genid-01ec67e0f9f8408a985eb23028324d983074-A4851839B33228DBC3B18B129E1599A2 .
+
+[] rdf:first :Pizza;
+  rdf:rest (_:genid-01ec67e0f9f8408a985eb23028324d983074-78C3BF5B83F70F2A5445BE44B72B89F4) .
+
+_:genid-01ec67e0f9f8408a985eb23028324d983074-78C3BF5B83F70F2A5445BE44B72B89F4 a owl:Restriction;
+  owl:onProperty :hasTopping;
+  owl:someValuesFrom _:genid-01ec67e0f9f8408a985eb23028324d983074-484451A4617FF8F5A57E763EFF5E3A71 .
+
+_:genid-01ec67e0f9f8408a985eb23028324d983074-484451A4617FF8F5A57E763EFF5E3A71 a owl:Class;
+  owl:unionOf _:genid-01ec67e0f9f8408a985eb23028324d983074-8EBF2434B92E13E7517A99264B64FB61 .
+
+[] rdf:first :Salami;
+  rdf:rest (:Ham) .
+
+:MeatTopping a owl:Class;
+  rdfs:label "MeatTopping";
+  rdfs:subClassOf :PizzaTopping;
+  owl:disjointWith :CheeseTopping .
+
+:Mozzarella a owl:Class;
+  rdfs:label "Mozzarella";
+  rdfs:subClassOf :CheeseTopping .
+
+:Pizza a owl:Class;
+  rdfs:label "Pizza" .
+
+:PizzaTopping a owl:Class;
+  rdfs:label "PizzaTopping" .
+
+:Salami a owl:Class;
+  rdfs:label "Salami";
+  rdfs:subClassOf :MeatTopping .
+
+:SalamiPizza a owl:Class;
+  rdfs:label "SalamiPizza";
+  rdfs:subClassOf _:genid-01ec67e0f9f8408a985eb23028324d983074-4D7D33B8B1C97D1E92B06F277BA1C7A5 .
+
+_:genid-01ec67e0f9f8408a985eb23028324d983074-4D7D33B8B1C97D1E92B06F277BA1C7A5 a owl:Class;
+  owl:intersectionOf _:genid-01ec67e0f9f8408a985eb23028324d983074-A8FBEC1CEC50D3E5EAD810604B49783D .
+
+[] rdf:first :Pizza;
+  rdf:rest (_:genid-01ec67e0f9f8408a985eb23028324d983074-20553E2A00430C2EECCF23B27610D142
+      []
+  ] .
+
+_:genid-01ec67e0f9f8408a985eb23028324d983074-20553E2A00430C2EECCF23B27610D142 a owl:Restriction;
+owl:onProperty :hasTopping;
+owl:someValuesFrom :Salami .
+
+[] rdf:first [];
+rdf:rest rdf:nil .
+
+_:genid-01ec67e0f9f8408a985eb23028324d983074-733DC91CC7C595FCE3D70D13B7FA1BEB a owl:Restriction;
+owl:onProperty :hasTopping;
+owl:someValuesFrom :Mozzarella .
+
+:SpicyPizza a owl:Class;
+rdfs:label "SpicyPizza";
+owl:equivalentClass _:genid-01ec67e0f9f8408a985eb23028324d983074-B1BB31EBDE704ED2B32E0FE4AFCD06DB .
+
+_:genid-01ec67e0f9f8408a985eb23028324d983074-B1BB31EBDE704ED2B32E0FE4AFCD06DB a owl:Class;
+owl:intersectionOf _:genid-01ec67e0f9f8408a985eb23028324d983074-C493E672F2C40147C885CEF35FA5D56E .
+
+[] rdf:first :Pizza;
+rdf:rest (_:genid-01ec67e0f9f8408a985eb23028324d983074-7F6192F148FDEDB777DAA2B37D83DDD3) .
+
+_:genid-01ec67e0f9f8408a985eb23028324d983074-7F6192F148FDEDB777DAA2B37D83DDD3 a owl:Restriction;
+owl:onProperty :hasTopping;
+owl:someValuesFrom :Jalapeno .
+
+:hasTopping a owl:ObjectProperty;
+rdfs:label "hat Belag"@de, "hasTopping" .
