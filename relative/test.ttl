@@ -43,4 +43,4 @@
   dct:creator "admin";
   dct:modified "2026-04-27T12:45:28.625Z"^^xsd:dateTime;
   rdfs:isDefinedBy :0.1;
-  rdfs:label "test test test"@en .
+  rdfs:label "test test test my new test label"@en .
