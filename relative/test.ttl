@@ -11,7 +11,7 @@
   dct:contributor "admin";
   dct:created "2026-04-23T16:20:25.118Z"^^xsd:dateTime;
   dct:creator "admin";
-  dct:modified "2026-04-27T11:33:54.500Z"^^xsd:dateTime;
+  dct:modified "2026-04-27T12:07:30.582Z"^^xsd:dateTime;
   dct:title "custom ontology"@en;
   <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
   <http://www.linkedmodel.org/1.2/schema/vaem#namespace> "http://ontologies.metaphacts.com/custom/"^^xsd:anyURI;
@@ -26,3 +26,12 @@
   dct:modified "2026-04-27T11:33:53.199Z"^^xsd:dateTime;
   rdfs:isDefinedBy :0.1;
   rdfs:label "clase"@en .
+
+:Test a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "admin";
+  dct:contributor "admin";
+  dct:created "2026-04-27T12:07:28.625Z"^^xsd:dateTime;
+  dct:creator "admin";
+  dct:modified "2026-04-27T12:07:28.625Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.1;
+  rdfs:label "test"@en .
