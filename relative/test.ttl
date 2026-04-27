@@ -13,7 +13,7 @@
   dct:creator "admin";
   dct:modified "2026-04-27T12:07:30.582Z"^^xsd:dateTime;
   dct:title "custom ontology"@en;
-  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
+  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/archived>;
   <http://www.linkedmodel.org/1.2/schema/vaem#namespace> "http://ontologies.metaphacts.com/custom/"^^xsd:anyURI;
   rdfs:label "custom"@en;
   owl:versionInfo "0.1" .
