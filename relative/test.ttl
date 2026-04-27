@@ -25,7 +25,7 @@
   dct:creator "admin";
   dct:modified "2026-04-27T11:33:53.199Z"^^xsd:dateTime;
   rdfs:isDefinedBy :0.1;
-  rdfs:label "clase"@en .
+  rdfs:label "clase test git"@en .
 
 :Test a owl:Class;
   <http://open-services.net/ns/core#modifiedBy> "admin";
@@ -34,4 +34,4 @@
   dct:creator "admin";
   dct:modified "2026-04-27T12:07:28.625Z"^^xsd:dateTime;
   rdfs:isDefinedBy :0.1;
-  rdfs:label "test"@en .
+  rdfs:label "test clase git"@en .
