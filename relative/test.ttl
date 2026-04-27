@@ -6,17 +6,17 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-:0.1 a owl:Ontology;
+:0.2 a owl:Ontology;
   <http://open-services.net/ns/core#modifiedBy> "admin";
   dct:contributor "admin";
   dct:created "2026-04-23T16:20:25.118Z"^^xsd:dateTime;
   dct:creator "admin";
   dct:modified "2026-04-27T12:07:30.582Z"^^xsd:dateTime;
   dct:title "custom ontology"@en;
-  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/archived>;
+  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
   <http://www.linkedmodel.org/1.2/schema/vaem#namespace> "http://ontologies.metaphacts.com/custom/"^^xsd:anyURI;
   rdfs:label "custom"@en;
-  owl:versionInfo "0.1" .
+  owl:versionInfo "0.2" .
 
 :Clase a owl:Class;
   <http://open-services.net/ns/core#modifiedBy> "admin";
@@ -43,4 +43,4 @@
   dct:creator "admin";
   dct:modified "2026-04-27T12:45:28.625Z"^^xsd:dateTime;
   rdfs:isDefinedBy :0.1;
-  rdfs:label "test test test my new test label"@en .
+  rdfs:label "test test test my new test label label"@en .
