@@ -12,7 +12,7 @@
   dct:contributor "admin";
   dct:created "2026-05-15T15:11:57.198Z"^^xsd:dateTime;
   dct:creator "admin";
-  dct:modified "2026-05-15T15:13:43.408Z"^^xsd:dateTime;
+  dct:modified "2026-05-15T15:19:59.781Z"^^xsd:dateTime;
   dct:title "Ontology in GIT"@en;
   <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
   vaem:namespace "http://ontologies.metaphacts.com/ontology-in-git/"^^xsd:anyURI;
@@ -28,3 +28,12 @@
   dct:modified "2026-05-15T15:13:41.553Z"^^xsd:dateTime;
   rdfs:isDefinedBy :0.2;
   rdfs:label "Class 1"@en .
+
+:Class2 a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "admin";
+  dct:contributor "admin";
+  dct:created "2026-05-15T15:19:58.608Z"^^xsd:dateTime;
+  dct:creator "admin";
+  dct:modified "2026-05-15T15:19:58.608Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.2;
+  rdfs:label "Class2"@en .
