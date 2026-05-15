@@ -14,7 +14,7 @@
   dct:creator "admin";
   dct:modified "2026-05-15T15:13:43.408Z"^^xsd:dateTime;
   dct:title "Ontology in GIT"@en;
-  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
+  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/published>;
   vaem:namespace "http://ontologies.metaphacts.com/ontology-in-git/"^^xsd:anyURI;
   rdfs:label "Ontology in GIT"@en;
   owl:versionInfo "0.1" .
