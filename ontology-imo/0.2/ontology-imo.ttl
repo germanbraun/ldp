@@ -1,0 +1,30 @@
+@prefix : <http://ontologies.metaphacts.com/ontology-imo/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix vaem: <http://www.linkedmodel.org/1.2/schema/vaem#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:0.2 a owl:Ontology;
+  <http://open-services.net/ns/core#modifiedBy> "admin";
+  dct:contributor "admin";
+  dct:created "2026-05-15T17:08:16.170Z"^^xsd:dateTime;
+  dct:creator "admin";
+  dct:modified "2026-05-15T17:09:00.333Z"^^xsd:dateTime;
+  dct:title "Ontology IMO"@en;
+  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
+  vaem:namespace "http://ontologies.metaphacts.com/ontology-imo/"^^xsd:anyURI;
+  rdfs:label "Ontology IMO"@en;
+  owl:priorVersion :0.1;
+  owl:versionInfo "0.2" .
+
+:ClassA a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "admin";
+  dct:contributor "admin";
+  dct:created "2026-05-15T17:08:58.132Z"^^xsd:dateTime;
+  dct:creator "admin";
+  dct:modified "2026-05-15T17:08:58.132Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.2;
+  rdfs:label "Class A"@en .
