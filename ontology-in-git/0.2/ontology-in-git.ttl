@@ -12,7 +12,8 @@
   dct:contributor "admin";
   dct:created "2026-05-15T15:11:57.198Z"^^xsd:dateTime;
   dct:creator "admin";
-  dct:modified "2026-05-15T15:19:59.781Z"^^xsd:dateTime;
+  dct:description "This is a description"@en;
+  dct:modified "2026-05-15T15:22:03.817Z"^^xsd:dateTime;
   dct:title "Ontology in GIT"@en;
   <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
   vaem:namespace "http://ontologies.metaphacts.com/ontology-in-git/"^^xsd:anyURI;
