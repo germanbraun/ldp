@@ -12,10 +12,20 @@
   dct:contributor "admin";
   dct:created "2026-05-15T17:18:18.572Z"^^xsd:dateTime;
   dct:creator "admin";
-  dct:modified "2026-05-15T17:18:18.572Z"^^xsd:dateTime;
+  dct:modified "2026-05-15T18:53:31.609Z"^^xsd:dateTime;
   dct:title "Vocabulary"@en;
-  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
+  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/published>;
   vaem:namespace "https://vocabularies.metaphacts.com/vocabulary/"^^xsd:anyURI;
   rdfs:label "Vocabulary"@en;
   owl:versionInfo "0.1";
+  skos:hasTopConcept :c397944a-8259-43b9-91f5-1775450b80cb;
   skos:prefLabel "Vocabulary"@en .
+
+:c397944a-8259-43b9-91f5-1775450b80cb a skos:Concept;
+  <http://open-services.net/ns/core#modifiedBy> "admin";
+  dct:contributor "admin";
+  dct:created "2026-05-15T18:53:31.609Z"^^xsd:dateTime;
+  dct:creator "admin";
+  dct:modified "2026-05-15T18:53:31.609Z"^^xsd:dateTime;
+  skos:inScheme :0.1;
+  skos:prefLabel "Al"@en .
