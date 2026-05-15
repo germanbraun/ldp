@@ -14,7 +14,7 @@
   dct:creator "admin";
   dct:modified "2026-05-15T17:09:00.333Z"^^xsd:dateTime;
   dct:title "Ontology IMO"@en;
-  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
+  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/published>;
   vaem:namespace "http://ontologies.metaphacts.com/ontology-imo/"^^xsd:anyURI;
   rdfs:label "Ontology IMO"@en;
   owl:priorVersion :0.1;
