@@ -12,8 +12,8 @@
   dct:contributor "admin";
   dct:created "2026-05-15T16:02:23.448Z"^^xsd:dateTime;
   dct:creator "admin";
-  dct:description "DESCR"@en;
-  dct:modified "2026-05-15T16:03:29.335Z"^^xsd:dateTime;
+  dct:description "DESCRIP"@en;
+  dct:modified "2026-05-15T16:03:56.524Z"^^xsd:dateTime;
   dct:title "Test Ontology"@en;
   <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
   vaem:namespace "http://ontologies.metaphacts.com/test-ontology/"^^xsd:anyURI;
