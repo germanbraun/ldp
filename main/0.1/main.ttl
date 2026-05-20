@@ -12,7 +12,7 @@
   dct:contributor "admin";
   dct:created "2026-05-15T15:40:03.881Z"^^xsd:dateTime;
   dct:creator "admin";
-  dct:description "DESCRIPTION"@en;
+  dct:description "DESCRIPTION TEST"@en;
   dct:modified "2026-05-15T15:40:54.674Z"^^xsd:dateTime;
   dct:title "MAIN"@en;
   <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
