@@ -4,7 +4,6 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
-@prefix vaem: <http://www.linkedmodel.org/1.2/schema/vaem#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 :0.1 a owl:Ontology;
@@ -12,9 +11,10 @@
   dct:contributor "admin";
   dct:created "2026-05-15T17:39:40.583Z"^^xsd:dateTime;
   dct:creator "admin";
-  dct:modified "2026-05-15T17:39:40.583Z"^^xsd:dateTime;
+  dct:description "aaaaaa"@en;
+  dct:modified "2026-06-09T18:40:09.440Z"^^xsd:dateTime;
   dct:title "TEst"@en;
   <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
-  vaem:namespace "http://ontologies.metaphacts.com/t-est/"^^xsd:anyURI;
+  <http://www.linkedmodel.org/1.2/schema/vaem#namespace> "http://ontologies.metaphacts.com/t-est/"^^xsd:anyURI;
   rdfs:label "TEst"@en;
   owl:versionInfo "0.1" .
