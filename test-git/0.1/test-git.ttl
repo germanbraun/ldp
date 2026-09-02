@@ -12,7 +12,7 @@
   dct:contributor "admin";
   dct:created "2026-09-02T18:35:55.317Z"^^xsd:dateTime;
   dct:creator "admin";
-  dct:description "This is a test"@en;
+  dct:description "This is a test fast-forward"@en;
   dct:modified "2026-09-02T18:38:13.852Z"^^xsd:dateTime;
   dct:title "Test Git"@en;
   <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
