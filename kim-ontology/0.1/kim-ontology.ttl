@@ -27,4 +27,4 @@
   dct:creator "admin";
   dct:modified "2026-09-03T11:55:58.690Z"^^xsd:dateTime;
   rdfs:isDefinedBy :0.1;
-  rdfs:label "Test"@en .
+  rdfs:label "Test Test"@en .
