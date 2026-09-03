@@ -12,10 +12,19 @@
   dct:contributor "admin";
   dct:created "2026-09-03T11:54:17.906Z"^^xsd:dateTime;
   dct:creator "admin";
-  dct:modified "2026-09-03T11:54:17.906Z"^^xsd:dateTime;
+  dct:modified "2026-09-03T11:56:00.097Z"^^xsd:dateTime;
   dct:title "Kim Ontology"@en;
   <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
   vaem:namespace "http://ontologies.metaphacts.com/kim-ontology/"^^xsd:anyURI;
   rdfs:label "Kim Ontology"@en;
   owl:imports <http://data.nobelprize.org/terms/>;
   owl:versionInfo "0.1" .
+
+:Test a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "admin";
+  dct:contributor "admin";
+  dct:created "2026-09-03T11:55:58.690Z"^^xsd:dateTime;
+  dct:creator "admin";
+  dct:modified "2026-09-03T11:55:58.690Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.1;
+  rdfs:label "Test"@en .
