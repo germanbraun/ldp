@@ -1,0 +1,21 @@
+@prefix : <http://ontologies.metaphacts.com/test-images/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix vaem: <http://www.linkedmodel.org/1.2/schema/vaem#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:0.1 a owl:Ontology;
+  <http://open-services.net/ns/core#modifiedBy> "admin";
+  dct:contributor "admin";
+  dct:created "2026-09-24T13:53:01.335Z"^^xsd:dateTime;
+  dct:creator "admin";
+  dct:modified "2026-10-09T13:45:00.890Z"^^xsd:dateTime;
+  dct:title "Test Images"@en;
+  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/published>;
+  vaem:namespace "http://ontologies.metaphacts.com/test-images/"^^xsd:anyURI;
+  rdfs:label "Test Images"@en;
+  owl:imports <https://ontologies.metaphacts.com/company-ontology/0.3>;
+  owl:versionInfo "0.1" .
