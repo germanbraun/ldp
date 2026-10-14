@@ -1,0 +1,196 @@
+@prefix : <urn:mapping:Test/20260930-094529/> .
+@prefix aso: <https://ontologies.metaphacts.com/asset/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix som: <https://ontologies.metaphacts.com/schema-ontology-mapping/> .
+@prefix vaem: <http://www.linkedmodel.org/1.2/schema/vaem#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:mapping:Test/20260930-094529> a aso:Mapping, aso:R2RMLMapping;
+  <http://open-services.net/ns/core#modifiedBy> "admin";
+  dct:contributor "System", "admin";
+  dct:created "2026-09-30T12:45:46.531Z"^^xsd:dateTime;
+  dct:creator "admin";
+  dct:modified "2026-10-14T13:56:24.796Z"^^xsd:dateTime;
+  dct:references <urn:datasource:AdventureWorksAcademy/20260925-103855>;
+  dct:title "Test"@en;
+  rdfs:label "Test"@en;
+  aso:hasLens [
+      rdfs:label "lenses/person/person";
+      aso:hasLensDefinition "{\"type\":\"OntopicBasicLens\",\"name\":[\"lenses\",\"person\",\"person\"],\"baseRelation\":[\"person\",\"person\"],\"columns\":{\"added\":[{\"name\":\"label\",\"transformations\":[{\"type\":\"SQLExpression\",\"expression\":\"CONCAT_WS(' ',\\\"firstname\\\",\\\"middlename\\\",\\\"lastname\\\")\"}]}],\"hidden\":[]},\"uniqueConstraints\":{\"added\":[]},\"otherFunctionalDependencies\":{\"added\":[]},\"foreignKeys\":{\"added\":[]},\"trivialPassthrough\":false}"
+    ], [
+      rdfs:label "lenses/humanresources/employee";
+      aso:hasLensDefinition "{\"type\":\"OntopicBasicLens\",\"name\":[\"lenses\",\"humanresources\",\"employee\"],\"baseRelation\":[\"humanresources\",\"employee\"],\"columns\":{\"added\":[],\"hidden\":[]},\"uniqueConstraints\":{\"added\":[]},\"otherFunctionalDependencies\":{\"added\":[]},\"foreignKeys\":{\"added\":[]},\"trivialPassthrough\":true}"
+    ], [
+      rdfs:label "lenses/humanresources/department";
+      aso:hasLensDefinition "{\"type\":\"OntopicBasicLens\",\"name\":[\"lenses\",\"humanresources\",\"department\"],\"baseRelation\":[\"humanresources\",\"department\"],\"columns\":{\"added\":[],\"hidden\":[]},\"uniqueConstraints\":{\"added\":[]},\"otherFunctionalDependencies\":{\"added\":[]},\"foreignKeys\":{\"added\":[]},\"trivialPassthrough\":true}"
+    ];
+  aso:hasMappingEntry [
+      aso:hasMappingEntryDefinition "{\"type\":\"PredicateObjectEntry\",\"id\":\"006cfb70-3096-41d3-9403-d2835b9b4d99\",\"source\":{\"type\":\"RelationSource\",\"relationName\":[\"lenses\",\"humanresources\",\"department\"],\"filterCondition\":null},\"subject\":{\"type\":\"IriOrBNodeTemplate\",\"termType\":\"iri\",\"template\":\"urn:data:humanresources-department/{departmentid}\",\"bindings\":{\"departmentid\":\"departmentid\"}},\"isIncludedInDefaultGraph\":true,\"graphs\":[],\"comment\":null,\"predicate\":{\"type\":\"IriOrBNodeConstant\",\"termType\":\"iri\",\"value\":\"http://www.w3.org/2000/01/rdf-schema#label\"},\"object\":{\"type\":\"LiteralColumn\",\"termType\":\"literal\",\"column\":\"name\",\"datatype\":\"http://www.w3.org/2001/XMLSchema#string\",\"language\":null}}";
+      aso:hasMappingEntryId "006cfb70-3096-41d3-9403-d2835b9b4d99"
+    ], [
+      aso:hasMappingEntryDefinition "{\"type\":\"ClassEntry\",\"id\":\"5b0e6b60-6f63-40b4-96b9-920e2b3c9af4\",\"source\":{\"type\":\"RelationSource\",\"relationName\":[\"lenses\",\"person\",\"person\"],\"filterCondition\":null},\"subject\":{\"type\":\"IriOrBNodeTemplate\",\"termType\":\"iri\",\"template\":\"urn:data:person-person/{businessentityid}\",\"bindings\":{\"businessentityid\":\"businessentityid\"}},\"isIncludedInDefaultGraph\":true,\"graphs\":[],\"comment\":null,\"class\":{\"type\":\"IriOrBNodeConstant\",\"termType\":\"iri\",\"value\":\"https://ontologies.metaphacts.com/organization-ontology/Person\"}}";
+      aso:hasMappingEntryId "5b0e6b60-6f63-40b4-96b9-920e2b3c9af4"
+    ], [
+      aso:hasMappingEntryDefinition "{\"type\":\"PredicateObjectEntry\",\"id\":\"177ae604-c0a1-456b-a631-cad4a972cf47\",\"source\":{\"type\":\"RelationSource\",\"relationName\":[\"lenses\",\"person\",\"person\"],\"filterCondition\":null},\"subject\":{\"type\":\"IriOrBNodeTemplate\",\"termType\":\"iri\",\"template\":\"urn:data:person-person/{businessentityid}\",\"bindings\":{\"businessentityid\":\"businessentityid\"}},\"isIncludedInDefaultGraph\":true,\"graphs\":[],\"comment\":null,\"predicate\":{\"type\":\"IriOrBNodeConstant\",\"termType\":\"iri\",\"value\":\"http://www.w3.org/2000/01/rdf-schema#label\"},\"object\":{\"type\":\"LiteralColumn\",\"termType\":\"literal\",\"column\":\"label\",\"datatype\":\"http://www.w3.org/2001/XMLSchema#string\",\"language\":null}}";
+      aso:hasMappingEntryId "177ae604-c0a1-456b-a631-cad4a972cf47"
+    ], [
+      aso:hasMappingEntryDefinition "{\"type\":\"ClassEntry\",\"id\":\"cd7505cc-fd72-4088-954b-c314b377c486\",\"source\":{\"type\":\"RelationSource\",\"relationName\":[\"lenses\",\"humanresources\",\"employee\"],\"filterCondition\":null},\"subject\":{\"type\":\"IriOrBNodeTemplate\",\"termType\":\"iri\",\"template\":\"urn:data:humanresources-employee/{businessentityid}\",\"bindings\":{\"businessentityid\":\"businessentityid\"}},\"isIncludedInDefaultGraph\":true,\"graphs\":[],\"comment\":null,\"class\":{\"type\":\"IriOrBNodeConstant\",\"termType\":\"iri\",\"value\":\"https://ontologies.metaphacts.com/organization-ontology/Person\"}}";
+      aso:hasMappingEntryId "cd7505cc-fd72-4088-954b-c314b377c486"
+    ], [
+      aso:hasMappingEntryDefinition "{\"type\":\"PredicateObjectEntry\",\"id\":\"6a3546e7-da57-4743-94e4-7496b0cada8a\",\"source\":{\"type\":\"RelationSource\",\"relationName\":[\"lenses\",\"humanresources\",\"employee\"],\"filterCondition\":null},\"subject\":{\"type\":\"IriOrBNodeTemplate\",\"termType\":\"iri\",\"template\":\"urn:data:humanresources-employee/{businessentityid}\",\"bindings\":{\"businessentityid\":\"businessentityid\"}},\"isIncludedInDefaultGraph\":true,\"graphs\":[],\"comment\":null,\"predicate\":{\"type\":\"IriOrBNodeConstant\",\"termType\":\"iri\",\"value\":\"https://ontologies.metaphacts.com/organization-ontology/hasBirthday\"},\"object\":{\"type\":\"LiteralColumn\",\"termType\":\"literal\",\"column\":\"birthdate\",\"datatype\":\"http://www.w3.org/2001/XMLSchema#date\",\"language\":null}}";
+      aso:hasMappingEntryId "6a3546e7-da57-4743-94e4-7496b0cada8a"
+    ], [
+      aso:hasMappingEntryDefinition "{\"type\":\"ClassEntry\",\"id\":\"bb027aef-9973-442d-96da-b02a3c3be19d\",\"source\":{\"type\":\"RelationSource\",\"relationName\":[\"lenses\",\"humanresources\",\"department\"],\"filterCondition\":null},\"subject\":{\"type\":\"IriOrBNodeTemplate\",\"termType\":\"iri\",\"template\":\"urn:data:humanresources-department/{departmentid}\",\"bindings\":{\"departmentid\":\"departmentid\"}},\"isIncludedInDefaultGraph\":true,\"graphs\":[],\"comment\":null,\"class\":{\"type\":\"IriOrBNodeConstant\",\"termType\":\"iri\",\"value\":\"https://ontologies.metaphacts.com/company-ontology/Department\"}}";
+      aso:hasMappingEntryId "bb027aef-9973-442d-96da-b02a3c3be19d"
+    ];
+  aso:hasMappingTemplate "{\"termType\":\"iri\",\"template\":\"urn:data:humanresources-department/{departmentid}\",\"bindings\":{\"departmentid\":\"departmentid\"}}",
+    "{\"termType\":\"iri\",\"template\":\"urn:data:humanresources-employee/{businessentityid}\",\"bindings\":{\"businessentityid\":\"businessentityid\"}}",
+    "{\"termType\":\"iri\",\"template\":\"urn:data:person-person/{businessentityid}\",\"bindings\":{\"businessentityid\":\"businessentityid\"}}";
+  aso:mapsFrom <urn:datasource:AdventureWorksAcademy/20260925-103855>;
+  aso:mapsTo <https://ontologies.metaphacts.com/company-ontology/0.3>;
+  aso:ontopicProjectId "2e03263f-ee31-42f4-aaaa-b7b1ac27bb43";
+  <https://schema.org/version> "20260930-094529" .
+
+<urn:mapping:Test/20260930-094529#triplesMap-006cfb70-3096-41d3-9403-d2835b9b4d99>
+  rr:logicalTable [
+      rr:tableName "\"lenses\".\"humanresources\".\"department\""
+    ];
+  rr:predicateObjectMap [
+      rr:objectMap [
+          rr:column "\"name\"";
+          rr:datatype xsd:string;
+          rr:termType rr:Literal
+        ];
+      rr:predicateMap [
+          rr:constant rdfs:label;
+          rr:termType rr:IRI
+        ]
+    ];
+  rr:subjectMap [
+      rr:graphMap [
+          rr:constant rr:defaultGraph;
+          rr:termType rr:IRI
+        ];
+      rr:template "urn:data:humanresources-department/{\"departmentid\"}";
+      rr:termType rr:IRI
+    ] .
+
+<urn:mapping:Test/20260930-094529#triplesMap-177ae604-c0a1-456b-a631-cad4a972cf47>
+  rr:logicalTable [
+      rr:tableName "\"lenses\".\"person\".\"person\""
+    ];
+  rr:predicateObjectMap [
+      rr:objectMap [
+          rr:column "\"label\"";
+          rr:datatype xsd:string;
+          rr:termType rr:Literal
+        ];
+      rr:predicateMap [
+          rr:constant rdfs:label;
+          rr:termType rr:IRI
+        ]
+    ];
+  rr:subjectMap [
+      rr:graphMap [
+          rr:constant rr:defaultGraph;
+          rr:termType rr:IRI
+        ];
+      rr:template "urn:data:person-person/{\"businessentityid\"}";
+      rr:termType rr:IRI
+    ] .
+
+<urn:mapping:Test/20260930-094529#triplesMap-5b0e6b60-6f63-40b4-96b9-920e2b3c9af4>
+  rr:logicalTable [
+      rr:tableName "\"lenses\".\"person\".\"person\""
+    ];
+  rr:predicateObjectMap [
+      rr:objectMap [
+          rr:constant <https://ontologies.metaphacts.com/organization-ontology/Person>;
+          rr:termType rr:IRI
+        ];
+      rr:predicateMap [
+          rr:constant rdf:type;
+          rr:termType rr:IRI
+        ]
+    ];
+  rr:subjectMap [
+      rr:graphMap [
+          rr:constant rr:defaultGraph;
+          rr:termType rr:IRI
+        ];
+      rr:template "urn:data:person-person/{\"businessentityid\"}";
+      rr:termType rr:IRI
+    ] .
+
+<urn:mapping:Test/20260930-094529#triplesMap-6a3546e7-da57-4743-94e4-7496b0cada8a>
+  rr:logicalTable [
+      rr:tableName "\"lenses\".\"humanresources\".\"employee\""
+    ];
+  rr:predicateObjectMap [
+      rr:objectMap [
+          rr:column "\"birthdate\"";
+          rr:datatype xsd:date;
+          rr:termType rr:Literal
+        ];
+      rr:predicateMap [
+          rr:constant <https://ontologies.metaphacts.com/organization-ontology/hasBirthday>;
+          rr:termType rr:IRI
+        ]
+    ];
+  rr:subjectMap [
+      rr:graphMap [
+          rr:constant rr:defaultGraph;
+          rr:termType rr:IRI
+        ];
+      rr:template "urn:data:humanresources-employee/{\"businessentityid\"}";
+      rr:termType rr:IRI
+    ] .
+
+<urn:mapping:Test/20260930-094529#triplesMap-bb027aef-9973-442d-96da-b02a3c3be19d>
+  rr:logicalTable [
+      rr:tableName "\"lenses\".\"humanresources\".\"department\""
+    ];
+  rr:predicateObjectMap [
+      rr:objectMap [
+          rr:constant <https://ontologies.metaphacts.com/company-ontology/Department>;
+          rr:termType rr:IRI
+        ];
+      rr:predicateMap [
+          rr:constant rdf:type;
+          rr:termType rr:IRI
+        ]
+    ];
+  rr:subjectMap [
+      rr:graphMap [
+          rr:constant rr:defaultGraph;
+          rr:termType rr:IRI
+        ];
+      rr:template "urn:data:humanresources-department/{\"departmentid\"}";
+      rr:termType rr:IRI
+    ] .
+
+<urn:mapping:Test/20260930-094529#triplesMap-cd7505cc-fd72-4088-954b-c314b377c486>
+  rr:logicalTable [
+      rr:tableName "\"lenses\".\"humanresources\".\"employee\""
+    ];
+  rr:predicateObjectMap [
+      rr:objectMap [
+          rr:constant <https://ontologies.metaphacts.com/organization-ontology/Person>;
+          rr:termType rr:IRI
+        ];
+      rr:predicateMap [
+          rr:constant rdf:type;
+          rr:termType rr:IRI
+        ]
+    ];
+  rr:subjectMap [
+      rr:graphMap [
+          rr:constant rr:defaultGraph;
+          rr:termType rr:IRI
+        ];
+      rr:template "urn:data:humanresources-employee/{\"businessentityid\"}";
+      rr:termType rr:IRI
+    ] .
